@@ -1,10 +1,8 @@
 # SeaIce_and_Atmosphere_Vorticity_Coupling
 
-This repository contains the code used to produce the manuscript "Increased rotational Coupling between Antarctic Sea Ice and the Atmosphere Over the Last 30 Years" submitted to the peer reviewed Journal of Geophysical Research: Oceans.
+This repository contains the code used to produce the Journal of Geophysical Research: Oceans article:
 
-Authors de Jager, W. and Vichi, M.
-
-Link to manuscript preprint and/or publication DOI will be updated in due course. 
+**de Jager, W., & Vichi, M. (2025). Increased rotational coupling between Antarctic sea ice and the atmosphere over the last 30 years. Journal of Geophysical Research: Oceans, 130, e2024JC021239. https://doi.org/10.1029/2024JC021239**
 
 -------
 The IceAtmos_anomaly_trends_v002.py script is used to iterate through daily sea-ice displacement estimates (using the EUMETSAT OSI-455-c low resolution sea-ice drift product) to quantify ice field vorticity variables. This script also requires ERA-5 vorticity data at hourly resolutions. These hourly vorticity fields are averaged of the same 24-hr window that the ice drift estimates are made. The ERA-5 fields are interpolated as to match the projection of the sea-ice displacement vectors. A mask is then created such that only atmospheric cells overlying the ice are considered. The script pools daily vorticity for both the ice and atmopshere into annual .csv files.
